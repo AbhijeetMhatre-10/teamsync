@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+/* =========================
+     DARK THEME — DEFAULT
+     ========================= */
+:root {
+  /* Backgrounds */
+  --background: #111114;
+  --surface: #18181c;
+  --card: #1e1e23;
+  --elevated: #24242a;
+
+  /* Text */
+  --foreground: #e8e7ec;
+  --muted-foreground: #a5a3ad;
+  --subtle-foreground: #777680;
+
+  /* Brand */
+  --primary: #8b7cf6;
+  --primary-foreground: #ffffff;
+  --primary-soft: #a99df8;
+
+  /* Secondary */
+  --secondary: #6f7080;
+  --secondary-foreground: #f1f0f4;
+
+  /* Accent */
+  --accent: #6fafa5;
+  --accent-foreground: #ffffff;
+
+  /* Status */
+  --success: #79b8a8;
+  --warning: #d4ad68;
+  --destructive: #d98282;
+
+  /* UI */
+  --border: #2d2d34;
+  --input: #25252b;
+  --ring: #8b7cf6;
+
+  /* Radius */
+  --radius: 0.75rem;
+}
+
+/* =========================
+   LIGHT THEME
+   ========================= */
+.light {
+  /* Backgrounds */
+  --background: #f5f5f7;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --elevated: #f0f0f4;
+
+  /* Text */
+  --foreground: #25252b;
+  --muted-foreground: #62636d;
+  --subtle-foreground: #858691;
+
+  /* Brand */
+  --primary: #6558c7;
+  --primary-foreground: #ffffff;
+  --primary-soft: #8175d6;
+
+  /* Secondary */
+  --secondary: #737586;
+  --secondary-foreground: #ffffff;
+
+  /* Accent */
+  --accent: #4f9188;
+  --accent-foreground: #ffffff;
+
+  /* Status */
+  --success: #4f8b7d;
+  --warning: #a8782e;
+  --destructive: #b85c5c;
+
+  /* UI */
+  --border: #dedee5;
+  --input: #ffffff;
+  --ring: #6558c7;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+}
