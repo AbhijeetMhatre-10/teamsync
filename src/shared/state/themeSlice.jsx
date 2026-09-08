@@ -8,7 +8,14 @@ const themeSlice = createSlice({
   reducers: {
     toggleTheme: (state) => {
       state.mode = state.mode === "dark" ? "light" : "dark";
+      
       localStorage.setItem("theme", state.mode);
+
+      if(state.mode==="light"){
+        document.documentElement.classList.add("light")
+      }else{
+        document.documentElement.classList.remove("light")
+      }
     },
   },
 });
