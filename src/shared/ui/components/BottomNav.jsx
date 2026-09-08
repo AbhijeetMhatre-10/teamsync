@@ -24,9 +24,9 @@ const BottomNav = () => {
             key={item.name}
             onClick={() => handleNavClick(item.path)}
             className={`
-              relative flex min-w-20 shrink-0 flex-col
-              items-center justify-center gap-1
-              px-3 py-3
+              relative flex min-w-20 flex-1 shrink-0
+              flex-col items-center justify-center
+              gap-1 px-3 py-3
               cursor-pointer
               transition-colors
               ${
