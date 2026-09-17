@@ -1,13 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
-import Loading from "../../shared/ui/pages/Loading";
+import LoadingPage from "../../shared/ui/pages/LoadingPage";
 
 const ProtectedRoute = () => {
   const { employee, isLoading } = useSelector((store) => store.auth);
 
   if(isLoading){
-    return <Loading/>
+    return <LoadingPage/>
   }
 
   if (!employee) {

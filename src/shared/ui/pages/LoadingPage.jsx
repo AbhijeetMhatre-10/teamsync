@@ -2,7 +2,7 @@ import React from "react";
 import { LoaderCircle } from "lucide-react";
 import logo from "../../../../assets/logo.png";
 
-const Loading = () => {
+const LoadingPage = () => {
   return (
     <main className="flex min-h-screen items-center justify-center bg-(--background) px-4">
       <div className="flex flex-col items-center text-center">
@@ -35,4 +35,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default LoadingPage;
